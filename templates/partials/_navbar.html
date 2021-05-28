@@ -1,0 +1,25 @@
+<!-- NAV BAR -->
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      {% if request.path == "" %}
+      <a class="nav-link active" aria-current="page" href="{% url 'myapp:index' %}">HOME</a>
+      {% else %}
+      <a class="nav-link eactiv" aria-current="page" href="{% url 'myapp:index' %}">HOME</a>
+      {% endif %}
+      
+      
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'myapp:pic' %}">PORTFOLIO PIC</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'myapp:profile' %}">DEVELOPER PORTFOLIO</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'myapp:organizations' %}">ORGANIZATIONS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'myapp:achievements' %}">ACHIEVEMENTS</a>
+    </li>
+  </ul>

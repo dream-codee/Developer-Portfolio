@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>PORTFOLIO PAGE</title>
+{% endblock %}
+
+{% block content %}
+<center>
+    <br><br>
+    <img src="{% static 'images/im1.jpeg' %}" alt="DSATM PIC" width="75" height="100"><br><br>
+    <h1>NAME : {{name}}</h1>
+    <h2>EMAIL : {{email}}</h2>
+    <h2>PHNO : {{phno}}</h2>
+    
+</center>
+{% endblock %}
